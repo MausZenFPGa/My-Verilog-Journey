@@ -7,11 +7,11 @@ module top_module(
 );
 
     // Звичайне безперервне присвоювання
-    assign out_assign = a ^ b;
+    assign out_assign = a & b;
 
     // Процедурне присвоювання всередині always-блоку
     always @(*) begin
-        out_alwaysblock = a ^ b;
+        out_alwaysblock = a & b;
     end
 
 endmodule
